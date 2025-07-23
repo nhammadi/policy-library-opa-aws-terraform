@@ -9,8 +9,8 @@ is_server_side_encryption_enabled(resource) if {
 }
 
 deny contains msg if {
-	some rs in input.plan.resource_changes
-	utils.is_in_scope(rs, "aws_dax_cluster")
+	some resource in input.plan.resource_changes
+	utils.is_in_scope(resource, "aws_dax_cluster")
 	not is_server_side_encryption_enabled(resource) # regal ignore:non-loop-expression
-	msg := sprintf("Configure server side encryption for resource '%s'", [rs.address])
+	msg := sprintf("Configure server side encryption for resource '%s'", [resource.address])
 }
