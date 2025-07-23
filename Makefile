@@ -10,37 +10,33 @@ ifeq ($(strip $(name)),)
 	@echo "Error: flag needs an argument: name"
 	@echo "Usage: make generate-policy name=your-policy-name"
 else
-	# Extract service and format subfolder
+	# Extract parts
 	$(eval service := $(word 1,$(subst -, ,$(name))))
-	$(eval policy_subfolder := $(subst -,_,$(name)))
+	$(eval file_base := $(patsubst $(service)-%,%,$(name)))
+	$(eval policy_subfolder := $(subst -,_,$(file_base)))
 
 	@echo "Generating policy: $(name)"
 	@echo "Service: $(service)"
 	@echo "Policy subfolder: $(policy_subfolder)"
+	@echo "File name: $(file_base).rego"
 
 	@mkdir -p policies/$(service)/$(policy_subfolder)
-# 	@mkdir -p policies/test/$(policy_subfolder)
 	@mkdir -p docs/policies
 
-	@echo "# Rego policy: $(name)" > policies/$(service)/$(policy_subfolder)/$(name).rego
-	@echo "package policies.$(service).$(policy_subfolder)" >> policies/$(service)/$(policy_subfolder)/$(name).rego
-	@echo "import data.utils >> policies/$(service)/$(policy_subfolder)/$(name).rego
-	@echo "import rego.v1" >> policies/$(service)/$(policy_subfolder)/$(name).rego
-	@echo "" >> policies/$(service)/$(policy_subfolder)/$(name).rego
-	@echo "# TODO: Define rules here" >> policies/$(service)/$(policy_subfolder)/$(name).rego
+	# Generate .rego file
+	@echo "# Rego policy: $(name)" > policies/$(service)/$(policy_subfolder)/$(file_base).rego
+	@echo "package policies.$(service).$(policy_subfolder)" >> policies/$(service)/$(policy_subfolder)/$(file_base).rego
+	@echo "import data.utils" >> policies/$(service)/$(policy_subfolder)/$(file_base).rego
+	@echo "import rego.v1" >> policies/$(service)/$(policy_subfolder)/$(file_base).rego
+	@echo "" >> policies/$(service)/$(policy_subfolder)/$(file_base).rego
+	@echo "# TODO: Define rules here" >> policies/$(service)/$(policy_subfolder)/$(file_base).rego
 
-# 	@echo "// Tests for policy: $(name)" > policies/test/$(policy_subfolder)/$(name)_test.rego
-# 	@echo "package policies.test.$(service).$(policy_subfolder)" >> policies/test/$(policy_subfolder)/$(name)_test.rego
-# 	@echo "" >> policies/test/$(policy_subfolder)/$(name)_test.rego
-# 	@echo "# TODO: Write test cases" >> policies/test/$(policy_subfolder)/$(name)_test.rego
-
-	# Create markdown doc
+	# Markdown documentation
 	@echo "# Policy: $(name)" > docs/policies/$(name).md
 	@echo "" >> docs/policies/$(name).md
 	@echo "Describe the purpose, rules, and usage of this policy." >> docs/policies/$(name).md
 
-	@echo "Policy written to: policies/$(service)/$(policy_subfolder)/$(name).rego"
-# 	@echo "Test file written to: policies/test/$(policy_subfolder)/$(name)_test.rego"
+	@echo "Policy written to: policies/$(service)/$(policy_subfolder)/$(file_base).rego"
 	@echo "Documentation written to: docs/policies/$(name).md"
 	@echo "Done."
 endif

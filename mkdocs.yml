@@ -72,3 +72,5 @@ nav:
   - DynamoDB:
     - enable-dax-in-transit-encryption: policies/dynamodb-dax-enable-in-transit-encryption.md
     - enable-dax-at-rest-encryption: policies/dynamodb-dax-enable-at-rest-encryption.md
+  - EFS:
+    - enable-at-rest-encryption: policies/efs-enable-at-rest-encryption.md
