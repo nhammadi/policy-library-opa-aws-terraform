@@ -10,3 +10,5 @@ Comprehensive OPA policies that can be used to establish secure Terraform config
 - Amazon DynamoDB Accelerator (DAX) clusters should be encrypted at rest ([docs](./docs/policies/dynamodb-dax-enable-at-rest-encryption.md) | [OPA](./policies/dynamodb/dynamodb_dax_enable_at_rest_encryption/dynamodb-dax-enable-at-rest-encryption.rego))
 
 - Elastic File System should be configured to encrypt data at-rest using AWS KMS ([docs](./docs/policies/efs-enable-at-rest-encryption.md) | [OPA](./policies/efs/enable_at_rest_encryption/enable-at-rest-encryption.rego))
+
+- Firehose delivery streams should be encrypted at rest using AWS KMS ([docs](./docs/policies/firehose-enable-server-side-encryption.md) | [OPA](./policies/firehose/enable_server_side_encryption/enable-server-side-encryption.rego))
