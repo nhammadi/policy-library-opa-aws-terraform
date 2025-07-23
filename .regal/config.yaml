@@ -1,0 +1,13 @@
+rules:
+  imports:
+    unresolved-import:
+      level: error
+      except-imports:
+        - data.utils
+    unresolved-reference:
+      level: error
+      except-paths:
+        - data.utils.*
+  idiomatic:
+    no-defined-entrypoint:
+      level: ignore
