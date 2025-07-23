@@ -11,7 +11,13 @@ policy "dynamodb-dax-enable-at-rest-encryption" {
 }
 
 policy "efs-enable-at-rest-encryption" {
-  query = "data.policies.dynamodb.efs_enable_at_rest_encryption.deny"
+  query = "data.policies.efs.enable_at_rest_encryption.deny"
   description = "Elastic File System should be configured to encrypt data at-rest using AWS KMS"
+  enforcement_level = "advisory"
+}
+
+policy "firehose-enable-server-side-encryption" {
+  query = "data.policies.firehose.enable_server_side_encryption.deny"
+  description = "Firehose delivery streams should be encrypted at rest using AWS KMS"
   enforcement_level = "advisory"
 }
