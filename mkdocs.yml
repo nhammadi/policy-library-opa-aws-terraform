@@ -1,0 +1,74 @@
+site_name: Policy Library For Secure AWS Infrastructure
+site_url: https://github.com/nhammadi/policy-library-opa-aws-terraform
+site_description: Comprehensive OPA policies that can be used to establish secure Terraform configuration for Amazon Web Services infrastructure.
+docs_dir: docs/
+repo_name: nhammadi/policy-library-opa-aws-terraform
+repo_url: https://github.com/nhammadi/policy-library-opa-aws-terraform
+extra:
+  generator: false
+extra_css:
+  - css/extra.css
+plugins:
+  - search:
+      lang:
+        - en
+markdown_extensions:
+  - admonition
+  - footnotes
+  - pymdownx.highlight:
+      auto_title: true
+      anchor_linenums: true
+      linenums: true
+  - pymdownx.superfences
+  - pymdownx.tabbed:
+      alternate_style: true
+      combine_header_slug: true
+  - attr_list
+theme:
+  icon:
+    admonition:
+      note: fontawesome/solid/note-sticky
+      abstract: fontawesome/solid/book
+      info: fontawesome/solid/circle-info
+      tip: fontawesome/solid/bullhorn
+      success: fontawesome/solid/check
+      question: fontawesome/solid/circle-question
+      warning: fontawesome/solid/triangle-exclamation
+      failure: fontawesome/solid/bomb
+      danger: fontawesome/solid/skull
+      bug: fontawesome/solid/robot
+      example: fontawesome/solid/flask
+      quote: fontawesome/solid/quote-left
+  palette:
+    - scheme: default
+      toggle:
+        icon: material/toggle-switch-off-outline
+        name: Switch to dark mode
+    - scheme: slate
+      toggle:
+        icon: material/toggle-switch
+        name: Switch to light mode
+  name: material
+  language: en
+  features:
+    - content.code.copy
+    - content.code.annotate
+    - content.tabs.link
+    - search.suggest
+    - search.highlight
+    - navigation.instant
+    - navigation.instant.progress
+    - navigation.expand
+    - navigation.path
+    - navigation.tabs
+    - navigation.tabs.sticky
+    - navigation.prune
+    - navigation.sections
+    - navigation.top
+nav:
+- Home:
+  - Welcome: index.md 
+- Policies:
+  - DynamoDB:
+    - enable-dax-in-transit-encryption: policies/dynamodb-dax-enable-in-transit-encryption.md
+    - enable-dax-at-rest-encryption: policies/dynamodb-dax-enable-at-rest-encryption.md

@@ -4,7 +4,7 @@ policy "dynamodb-dax-enable-in-transit-encryption" {
   enforcement_level = "advisory"
 }
 
-policy "dynamodb-enable-at-rest-encryption" {
+policy "dynamodb-dax-enable-at-rest-encryption" {
   query = "data.policies.dynamodb.dynamodb_enable_at_rest_encryption.deny"
   description = "Amazon DynamoDB Accelerator (DAX) clusters should be encrypted at rest"
   enforcement_level = "advisory"
