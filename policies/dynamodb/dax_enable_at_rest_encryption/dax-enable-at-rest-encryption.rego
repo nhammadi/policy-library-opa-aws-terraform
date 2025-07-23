@@ -1,5 +1,5 @@
 # Rego policy: dynamodb-enable-at-rest-encryption
-package policies.dynamodb.dynamodb_dax_enable_at_rest_encryption
+package policies.dynamodb.dax_enable_at_rest_encryption
 
 import data.utils
 import rego.v1

@@ -67,7 +67,7 @@ theme:
     - navigation.top
 nav:
 - Home:
-  - Welcome: index.md 
+  - Welcome: index.md
 - Policies:
   - DynamoDB:
     - enable-dax-in-transit-encryption: policies/dynamodb-dax-enable-in-transit-encryption.md

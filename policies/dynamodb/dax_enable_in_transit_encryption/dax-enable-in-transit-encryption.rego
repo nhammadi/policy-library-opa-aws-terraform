@@ -1,4 +1,4 @@
-package policies.dynamodb.dynamodb_dax_enable_in_transit_encryption
+package policies.dynamodb.dax_enable_in_transit_encryption
 
 import data.utils
 import rego.v1
