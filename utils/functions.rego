@@ -1,5 +1,7 @@
 package utils
 
+import rego.v1
+
 is_create_or_update(actions) if {
 	some action in actions
 	action in ["create", "update", "no-op"]
