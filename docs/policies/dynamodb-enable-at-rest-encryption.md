@@ -1,4 +1,4 @@
-# DynamoDB Accelerator (DAX) clusters should be encrypted at rest
+# Amazon DynamoDB Accelerator (DAX) clusters should be encrypted at rest
 
 | Provider            |       Category      |
 | ------------------- |  -----------------  |
@@ -8,7 +8,7 @@
 
 ### Description
 
-This control checks whether an **Amazon DynamoDB Accelerator (DAX)** cluster is encrypted **at rest**, by verifying that the `server_side_encryption.enabled` is set to `true` in the Terraform configuration.  
+This control checks whether an **Amazon DynamoDB Accelerator (DAX)** cluster is encrypted **at rest**, by verifying that the `server_side_encryption.enabled` is set to `true` in the Terraform configuration.
 
 ```hcl title="dax.tf"
 resource "aws_dax_cluster" "foo" {
