@@ -87,3 +87,9 @@ policy "athena-enable-logging" {
   description = "Athena workgroups should have logging enabled"
   enforcement_level = "advisory"
 }
+
+policy "dms-enable-auto-minor-version-upgrade" {
+  query = "data.policies.dms.enable_auto_minor_version_upgrade.deny"
+  description = "DMS replication instances should have automatic minor version upgrade enabled"
+  enforcement_level = "advisory"
+}
