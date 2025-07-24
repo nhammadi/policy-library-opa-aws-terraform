@@ -57,3 +57,9 @@ policy "glue-spark-job-supported-version" {
   description = "AWS Glue Spark jobs should run on supported versions of AWS Glue"
   enforcement_level = "advisory"
 }
+
+policy "ecs-enable-container-insights" {
+  query = "data.policies.ecs.enable_container_insights.deny"
+  description = "ECS clusters should use Container Insights"
+  enforcement_level = "advisory"
+}

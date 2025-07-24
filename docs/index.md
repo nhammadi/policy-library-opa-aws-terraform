@@ -11,6 +11,9 @@
 ### Elastic File System
 - [enable-at-rest-encryption](./policies/efs-enable-at-rest-encryption.md) Elastic File Systems should be configured to encrypt data at-rest using AWS KMS
 
+### Amazon ECS
+- [enable-container-insights](./policies/ecs-enable-container-insights.md) ECS clusters should use Container Insights
+
 ### AWS Glue
 - [spark-job-supported-version](./policies/glue-spark-job-supported-version.md) AWS Glue Spark jobs should run on supported versions of AWS Glue
 
