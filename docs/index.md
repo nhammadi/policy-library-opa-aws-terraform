@@ -1,4 +1,4 @@
-# AWS Policies Per Service
+# Policies Per AWS Service
 
 ### Amazon API Gateway V2
 - [enable-access-logs](./policies/apigatewayv2-enable-access-logs.md) Access logging should be configured for API Gateway V2 Stages
