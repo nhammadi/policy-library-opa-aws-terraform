@@ -33,3 +33,9 @@ policy "sqs-enable-at-rest-encryption" {
   description = "Amazon SQS queues should be encrypted at rest"
   enforcement_level = "advisory"
 }
+
+policy "stepfunction-enable-logging" {
+  query = "data.policies.stepfunction.enable_logging.deny"
+  description = "Step Functions state machines should have logging turned on"
+  enforcement_level = "advisory"
+}

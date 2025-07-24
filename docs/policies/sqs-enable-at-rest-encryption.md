@@ -23,7 +23,7 @@ resource "aws_sqs_queue" "foo" {
 
 ### Remediation
 
-To fix this violation, enable encryption at rest by setting the `encrypted` attribute to `true` and set `kms_key_id` in your Terraform configuration:
+To remediate this issue, enable encryption by specifying a valid KMS key ARN in the kms_master_key_id attribute:
 
 ```hcl
 resource "aws_sqs_queue" "foo" {

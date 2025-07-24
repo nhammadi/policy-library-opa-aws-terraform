@@ -16,3 +16,6 @@
 
 ### Amazon SQS
 - [enable-at-rest-encryption](./policies/sqs-enable-at-rest-encryption.md) Amazon SQS queues should be encrypted at rest
+
+### AWS Step Functions
+- [enable-logging](./policies/enable-logging.md) Step Functions state machines should have logging turned on

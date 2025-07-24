@@ -30,7 +30,8 @@ resource "aws_apigatewayv2_stage" "foo" {
 
 ### Remediation
 
-To fix this violation, set the encryption type explicitly in your Terraform configuration:
+To fix this violation, configure access logging by defining the access_log_settings block and specifying a valid CloudWatch Logs destination ARN and log format:
+
 ``` hcl
 resource "aws_apigatewayv2_api" "foo" {
   name          = "example-http-api"

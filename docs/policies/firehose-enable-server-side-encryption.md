@@ -24,7 +24,7 @@ resource "aws_kinesis_firehose_delivery_stream" "foo" {
 
 ### Remediation
 
-To fix this violation, enable encryption at rest by setting the `encrypted` attribute to `true` and set `kms_key_id` in your Terraform configuration:
+To fix this violation, configure server-side encryption by adding the `server_side_encryption` block and setting `enabled = true` and `key_arn`:
 
 ```hcl
 resource "aws_kinesis_firehose_delivery_stream" "foo" {

@@ -22,3 +22,7 @@ repos:
     hooks:
     - id: codespell
       files: ^.*\.(rego|tf|md|yaml|yml)$
+  - repo: https://github.com/gitleaks/gitleaks
+    rev: v8.28.0
+    hooks:
+      - id: gitleaks
