@@ -63,3 +63,9 @@ policy "ecs-enable-container-insights" {
   description = "ECS clusters should use Container Insights"
   enforcement_level = "advisory"
 }
+
+policy "ecs-disable-taskset-assign-public-ip" {
+  query = "data.policies.ecs.disable_taskset_assign_public_ip.deny"
+  description = "ECS task sets should not automatically assign public IP addresses"
+  enforcement_level = "advisory"
+}

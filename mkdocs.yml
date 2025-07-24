@@ -78,6 +78,7 @@ nav:
     - enable-at-rest-encryption: policies/efs-enable-at-rest-encryption.md
   - ECS:
     - enable-container-insights: policies/ecs-enable-container-insights.md
+    - disable-taskset-assign-public-ip: policies/ecs-disable-taskset-assign-public-ip.md
   - Firehose:
     - enable-at-rest-encryption: policies/firehose-enable-server-side-encryption.md
   - Glue:
