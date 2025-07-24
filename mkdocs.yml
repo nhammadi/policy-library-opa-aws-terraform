@@ -76,6 +76,8 @@ nav:
     - enable-dax-at-rest-encryption: policies/dynamodb-dax-enable-at-rest-encryption.md
   - EFS:
     - enable-at-rest-encryption: policies/efs-enable-at-rest-encryption.md
+  - ECR:
+    - enable-private-image-scanning: policies/ecr-enable-private-image-scanning.md
   - ECS:
     - enable-container-insights: policies/ecs-enable-container-insights.md
     - disable-taskset-assign-public-ip: policies/ecs-disable-taskset-assign-public-ip.md

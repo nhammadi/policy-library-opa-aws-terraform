@@ -11,6 +11,9 @@
 ### Elastic File System
 - [enable-at-rest-encryption](./policies/efs-enable-at-rest-encryption.md) Elastic File Systems should be configured to encrypt data at-rest using AWS KMS
 
+### Amazon ECR
+- [enable-private-image-scanning](./policies/ecr-enable-private-image-scanning.md) ECR private repositories should have image scanning configured
+
 ### Amazon ECS
 - [enable-container-insights](./policies/ecs-enable-container-insights.md) ECS clusters should use Container Insights
 - [disable-taskset-assign-public-ip](./policies/ecs-disable-taskset-assign-public-ip.md) ECS task sets should not automatically assign public IP addresses

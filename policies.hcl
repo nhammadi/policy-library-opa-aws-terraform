@@ -69,3 +69,9 @@ policy "ecs-disable-taskset-assign-public-ip" {
   description = "ECS task sets should not automatically assign public IP addresses"
   enforcement_level = "advisory"
 }
+
+policy "ecr-enable-private-image-scanning" {
+  query = "data.policies.ecr.enable_private_image_scanning.deny"
+  description = "ECR private repositories should have image scanning configured"
+  enforcement_level = "advisory"
+}
