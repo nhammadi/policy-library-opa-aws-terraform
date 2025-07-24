@@ -99,3 +99,9 @@ policy "mq-enable-auto-minor-version-upgrade" {
   description = "Amazon MQ brokers should have automatic minor version upgrade enabled"
   enforcement_level = "advisory"
 }
+
+policy "rds-enable-auto-minor-version-upgrade" {
+  query = "data.policies.rds.enable_auto_minor_version_upgrade.deny"
+  description = "RDS automatic minor version upgrades should be enabled"
+  enforcement_level = "advisory"
+}
