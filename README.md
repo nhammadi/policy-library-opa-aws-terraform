@@ -36,3 +36,5 @@ Comprehensive OPA policies that can be used to establish secure Terraform config
 - Athena workgroups should have logging enabled ([docs](./docs/policies/athena-enable-logging.md) | [OPA](./policies/athena/enable_logging/enable-logging.rego))
 
 - DMS replication instances should have automatic minor version upgrade enabled ([docs](./docs/policies/dms-enable-auto-minor-version-upgrade.md) | [OPA](./policies/dms/enable_auto_minor_version_upgrade/enable-auto-minor-version-upgrade.rego))
+
+- Amazon MQ brokers should have automatic minor version upgrade enabled ([docs](./docs/policies/mq-enable-auto-minor-version-upgrade.md) | [OPA](./policies/mq/enable_auto_minor_version_upgrade/enable-auto-minor-version-upgrade.rego))

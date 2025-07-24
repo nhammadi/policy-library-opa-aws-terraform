@@ -93,3 +93,9 @@ policy "dms-enable-auto-minor-version-upgrade" {
   description = "DMS replication instances should have automatic minor version upgrade enabled"
   enforcement_level = "advisory"
 }
+
+policy "mq-enable-auto-minor-version-upgrade" {
+  query = "data.policies.mq.enable_auto_minor_version_upgrade.deny"
+  description = "Amazon MQ brokers should have automatic minor version upgrade enabled"
+  enforcement_level = "advisory"
+}

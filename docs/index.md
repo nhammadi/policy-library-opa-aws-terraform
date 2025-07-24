@@ -34,6 +34,9 @@
 ### AWS KMS
 - [enable-key-rotation](./policies/kms-enable-key-rotation.md) AWS KMS key rotation should be enabled
 
+### Amazon MQ
+- [enable-auto-minor-version-upgrade](./policies/mq-enable-auto-minor-version-upgrade.md) Amazon MQ brokers should have automatic minor version upgrade enabled
+
 ### Amazon Kinesis Data Firehose
 - [enable-server-side-encryption](./policies/firehose-enable-server-side-encryption.md) Firehose delivery streams should be encrypted at rest using AWS KMS
 
