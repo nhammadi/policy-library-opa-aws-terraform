@@ -38,6 +38,19 @@ else
 
 	@echo "Policy written to: policies/$(service)/$(policy_subfolder)/$(file_base).rego"
 	@echo "Documentation written to: docs/policies/$(name).md"
+
+	# Append entry to policies.hcl
+	@echo "" >> policies.hcl
+	@echo "policy \"$(name)\" {" >> policies.hcl
+	@echo "  query = \"data.policies.$(service).$(policy_subfolder).deny\"" >> policies.hcl
+	@echo "  description = \"TODO: Add description for $(name)\"" >> policies.hcl
+	@echo "  enforcement_level = \"advisory\"" >> policies.hcl
+	@echo "}" >> policies.hcl
+
+	# Append entry to README.md
+	@echo "- TODO: Add policy summary for $(name) ([docs](./docs/policies/$(name).md) | [OPA](./policies/$(service)/$(policy_subfolder)/$(file_base).rego))" >> README.md
+
+
 	@echo "Done."
 endif
 

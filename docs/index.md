@@ -13,3 +13,6 @@
 
 ### Amazon Kinesis Data Firehose
 - [enable-server-side-encryption](./policies/firehose-enable-server-side-encryption.md) Firehose delivery streams should be encrypted at rest using AWS KMS
+
+### Amazon SQS
+- [enable-at-rest-encryption](./policies/sqs-enable-at-rest-encryption.md) Amazon SQS queues should be encrypted at rest

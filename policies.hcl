@@ -27,3 +27,9 @@ policy "apigatewayv2-enable-access-logs" {
   description = "Access logging should be configured for API Gateway V2 Stages"
   enforcement_level = "advisory"
 }
+
+policy "sqs-enable-at-rest-encryption" {
+  query = "data.policies.sqs.enable_at_rest_encryption.deny"
+  description = "Amazon SQS queues should be encrypted at rest"
+  enforcement_level = "advisory"
+}
