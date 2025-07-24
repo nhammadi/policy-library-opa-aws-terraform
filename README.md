@@ -22,3 +22,5 @@ Comprehensive OPA policies that can be used to establish secure Terraform config
 - Kinesis streams should be encrypted at rest ([docs](./docs/policies/kinesis-enable-server-side-encryption.md) | [OPA](./policies/kinesis/enable_server_side_encryption/enable-server-side-encryption.rego))
 
 - AWS KMS key rotation should be enabled ([docs](./docs/policies/kms-enable-key-rotation.md) | [OPA](./policies/kms/enable_key_rotation/enable-key-rotation.rego))
+
+- AWS Glue Spark jobs should run on supported versions of AWS Glue ([docs](./docs/policies/glue-spark-job-supported-version.md) | [OPA](./policies/glue/spark_job_supported_version/spark-job-supported-version.rego))

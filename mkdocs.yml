@@ -78,6 +78,8 @@ nav:
     - enable-at-rest-encryption: policies/efs-enable-at-rest-encryption.md
   - Firehose:
     - enable-at-rest-encryption: policies/firehose-enable-server-side-encryption.md
+  - Glue:
+    - spark-job-supported-version: policies/glue-spark-job-supported-version.md
   - Kinesis:
     - enable-server-side-encryption: policies/kinesis-enable-server-side-encryption.md
   - KMS:

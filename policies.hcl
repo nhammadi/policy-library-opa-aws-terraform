@@ -51,3 +51,9 @@ policy "kms-enable-key-rotation" {
   description = "AWS KMS key rotation should be enabled"
   enforcement_level = "advisory"
 }
+
+policy "glue-spark-job-supported-version" {
+  query = "data.policies.glue.spark_job_supported_version.deny"
+  description = "AWS Glue Spark jobs should run on supported versions of AWS Glue"
+  enforcement_level = "advisory"
+}
