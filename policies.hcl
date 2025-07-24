@@ -21,3 +21,9 @@ policy "firehose-enable-server-side-encryption" {
   description = "Firehose delivery streams should be encrypted at rest using AWS KMS"
   enforcement_level = "advisory"
 }
+
+policy "apigatewayv2-enable-access-logs" {
+  query = "data.policies.apigatewayv2.enable_access_logs.deny"
+  description = "Access logging should be configured for API Gateway V2 Stages"
+  enforcement_level = "advisory"
+}

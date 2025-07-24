@@ -5,10 +5,10 @@ fmt:
 
 .PHONY: fmt
 
-generate-policy:
+generate:
 ifeq ($(strip $(name)),)
 	@echo "Error: flag needs an argument: name"
-	@echo "Usage: make generate-policy name=your-policy-name"
+	@echo "Usage: make generate name=your-policy-name"
 else
 	# Extract parts
 	$(eval service := $(word 1,$(subst -, ,$(name))))
@@ -41,7 +41,7 @@ else
 	@echo "Done."
 endif
 
-.PHONY: generate-policy
+.PHONY: generate
 
 
 lint:

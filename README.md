@@ -12,3 +12,5 @@ Comprehensive OPA policies that can be used to establish secure Terraform config
 - Elastic File System should be configured to encrypt data at-rest using AWS KMS ([docs](./docs/policies/efs-enable-at-rest-encryption.md) | [OPA](./policies/efs/enable_at_rest_encryption/enable-at-rest-encryption.rego))
 
 - Firehose delivery streams should be encrypted at rest using AWS KMS ([docs](./docs/policies/firehose-enable-server-side-encryption.md) | [OPA](./policies/firehose/enable_server_side_encryption/enable-server-side-encryption.rego))
+
+- Access logging should be configured for API Gateway V2 Stages ([docs](./docs/policies/apigatewayv2-enable-access-logs.md) | [OPA](./policies/apigatewayv2/enable_access_logs/enable-access-logs.rego))
