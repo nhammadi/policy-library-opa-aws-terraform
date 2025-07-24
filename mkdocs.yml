@@ -80,3 +80,5 @@ nav:
     - enable-at-rest-encryption: policies/firehose-enable-server-side-encryption.md
   - SQS:
     - enable-at-rest-encryption: policies/sqs-enable-at-rest-encryption.md
+  - Step Functions:
+    - enable-logging: policies/stepfunction-enable-logging.md
