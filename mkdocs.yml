@@ -78,6 +78,7 @@ nav:
     - enable-at-rest-encryption: policies/efs-enable-at-rest-encryption.md
   - ECR:
     - enable-private-image-scanning: policies/ecr-enable-private-image-scanning.md
+    - configure-private-lifecycle-policy: policies/ecr-configure-private-lifecycle-policy.md
   - ECS:
     - enable-container-insights: policies/ecs-enable-container-insights.md
     - disable-taskset-assign-public-ip: policies/ecs-disable-taskset-assign-public-ip.md

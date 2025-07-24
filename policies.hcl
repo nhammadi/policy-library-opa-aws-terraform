@@ -75,3 +75,9 @@ policy "ecr-enable-private-image-scanning" {
   description = "ECR private repositories should have image scanning configured"
   enforcement_level = "advisory"
 }
+
+policy "ecr-configure-private-lifecycle-policy" {
+  query = "data.policies.ecr.configure_private_lifecycle_policy.deny"
+  description = "ECR repositories should have at least one lifecycle policy configured"
+  enforcement_level = "advisory"
+}

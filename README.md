@@ -30,3 +30,5 @@ Comprehensive OPA policies that can be used to establish secure Terraform config
 - ECS task sets should not automatically assign public IP addresses ([docs](./docs/policies/ecs-disable-taskset-assign-public-ip.md) | [OPA](./policies/ecs/disable_taskset_assign_public_ip/disable-taskset-assign-public-ip.rego))
 
 - ECR private repositories should have image scanning configured ([docs](./docs/policies/ecr-enable-private-image-scanning.md) | [OPA](./policies/ecr/enable_private_image_scanning/enable-private-image-scanning.rego))
+
+- ECR repositories should have at least one lifecycle policy configured ([docs](./docs/policies/ecr-configure-private-lifecycle-policy.md) | [OPA](./policies/ecr/configure_private_lifecycle_policy/configure-private-lifecycle-policy.rego))

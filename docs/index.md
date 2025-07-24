@@ -13,6 +13,7 @@
 
 ### Amazon ECR
 - [enable-private-image-scanning](./policies/ecr-enable-private-image-scanning.md) ECR private repositories should have image scanning configured
+- [configure-private-lifecycle-policy](./policies/ecr-configure-private-lifecycle-policy.md) ECR repositories should have at least one lifecycle policy configured
 
 ### Amazon ECS
 - [enable-container-insights](./policies/ecs-enable-container-insights.md) ECS clusters should use Container Insights
