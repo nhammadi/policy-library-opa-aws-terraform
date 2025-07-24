@@ -45,3 +45,9 @@ policy "kinesis-enable-server-side-encryption" {
   description = "Kinesis streams should be encrypted at rest"
   enforcement_level = "advisory"
 }
+
+policy "kms-enable-key-rotation" {
+  query = "data.policies.kms.enable_key_rotation.deny"
+  description = "AWS KMS key rotation should be enabled"
+  enforcement_level = "advisory"
+}

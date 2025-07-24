@@ -20,3 +20,5 @@ Comprehensive OPA policies that can be used to establish secure Terraform config
 - Step Functions state machines should have logging turned on ([docs](./docs/policies/stepfunction-enable-logging.md) | [OPA](./policies/stepfunction/enable_logging/enable-logging.rego))
 
 - Kinesis streams should be encrypted at rest ([docs](./docs/policies/kinesis-enable-server-side-encryption.md) | [OPA](./policies/kinesis/enable_server_side_encryption/enable-server-side-encryption.rego))
+
+- AWS KMS key rotation should be enabled ([docs](./docs/policies/kms-enable-key-rotation.md) | [OPA](./policies/kms/enable_key_rotation/enable-key-rotation.rego))

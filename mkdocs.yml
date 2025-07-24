@@ -80,6 +80,8 @@ nav:
     - enable-at-rest-encryption: policies/firehose-enable-server-side-encryption.md
   - Kinesis:
     - enable-server-side-encryption: policies/kinesis-enable-server-side-encryption.md
+  - KMS:
+    - enable-key-rotation: policies/kms-enable-key-rotation.md
   - SQS:
     - enable-at-rest-encryption: policies/sqs-enable-at-rest-encryption.md
   - Step Functions:

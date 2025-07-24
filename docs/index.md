@@ -14,6 +14,9 @@
 ### Kinesis Data Streams
 - [enable-server-side-encryption](./policies/kinesis-enable-server-side-encryption.md) Kinesis streams should be encrypted at rest
 
+### AWS KMS
+- [enable-key-rotation](./policies/kms-enable-key-rotation.md) AWS KMS key rotation should be enabled
+
 ### Amazon Kinesis Data Firehose
 - [enable-server-side-encryption](./policies/firehose-enable-server-side-encryption.md) Firehose delivery streams should be encrypted at rest using AWS KMS
 
