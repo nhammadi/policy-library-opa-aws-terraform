@@ -81,3 +81,9 @@ policy "ecr-configure-private-lifecycle-policy" {
   description = "ECR repositories should have at least one lifecycle policy configured"
   enforcement_level = "advisory"
 }
+
+policy "athena-enable-logging" {
+  query = "data.policies.athena.enable_logging.deny"
+  description = "Athena workgroups should have logging enabled"
+  enforcement_level = "advisory"
+}

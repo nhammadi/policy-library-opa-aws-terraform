@@ -5,13 +5,13 @@ import data.utils
 import rego.v1
 
 has_lifecycle_policy(ecr_repository_name) if {
-	some resource in input.resource_changes
+	some resource in input.plan.resource_changes
 	utils.is_in_scope(resource, "aws_ecr_lifecycle_policy")
 	resource.change.after.repository == ecr_repository_name
 }
 
 deny contains msg if {
-	some resource in input.resource_changes
+	some resource in input.plan.resource_changes
 	utils.is_in_scope(resource, "aws_ecr_repository")
 	ecr_repository_name := resource.change.after.name
 	not has_lifecycle_policy(ecr_repository_name)

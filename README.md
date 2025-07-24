@@ -32,3 +32,5 @@ Comprehensive OPA policies that can be used to establish secure Terraform config
 - ECR private repositories should have image scanning configured ([docs](./docs/policies/ecr-enable-private-image-scanning.md) | [OPA](./policies/ecr/enable_private_image_scanning/enable-private-image-scanning.rego))
 
 - ECR repositories should have at least one lifecycle policy configured ([docs](./docs/policies/ecr-configure-private-lifecycle-policy.md) | [OPA](./policies/ecr/configure_private_lifecycle_policy/configure-private-lifecycle-policy.rego))
+
+- Athena workgroups should have logging enabled ([docs](./docs/policies/athena-enable-logging.md) | [OPA](./policies/athena/enable_logging/enable-logging.rego))

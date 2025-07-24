@@ -71,6 +71,8 @@ nav:
 - Policies:
   - APIGateway V2:
     - enable-access-logs: policies/apigatewayv2-enable-access-logs.md
+  - Athena:
+    - enable-logging: policies/athena-enable-logging.md
   - DynamoDB:
     - enable-dax-in-transit-encryption: policies/dynamodb-dax-enable-in-transit-encryption.md
     - enable-dax-at-rest-encryption: policies/dynamodb-dax-enable-at-rest-encryption.md

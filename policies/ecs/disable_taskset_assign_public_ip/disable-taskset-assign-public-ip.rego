@@ -9,7 +9,7 @@ is_publicly_accessible(resource) if {
 }
 
 deny contains msg if {
-	some resource in input.resource_changes
+	some resource in input.plan.resource_changes
 	utils.is_in_scope(resource, "aws_ecs_task_set")
 	resource.change.after.launch_type == "FARGATE"
 	is_publicly_accessible(resource)

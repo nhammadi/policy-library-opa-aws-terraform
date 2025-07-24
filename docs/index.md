@@ -3,6 +3,9 @@
 ### Amazon API Gateway V2
 - [enable-access-logs](./policies/apigatewayv2-enable-access-logs.md) Access logging should be configured for API Gateway V2 Stages
 
+### Amazon Athena
+- [enable-logging](./policies/athena-enable-logging.md) Athena workgroups should have logging enabled
+
 ### DynamoDB
 - [enable-dax-at-rest-encryption](./policies/dynamodb-dax-enable-in-transit-encryption.md) Amazon DynamoDB Accelerator (DAX) clusters should be encrypted at rest
 

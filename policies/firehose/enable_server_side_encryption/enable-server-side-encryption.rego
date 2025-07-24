@@ -19,7 +19,7 @@ is_server_side_encryption_enabled(resource) if {
 }
 
 deny contains msg if {
-	some resource in input.resource_changes
+	some resource in input.plan.resource_changes
 	utils.is_in_scope(resource, "aws_kinesis_firehose_delivery_stream")
 	not is_server_side_encryption_enabled(resource)
 	msg := sprintf("Configure server side encryption for resource '%s'", [resource.address])

@@ -17,7 +17,7 @@ is_logging_configuration_specified(resource) if {
 }
 
 deny contains msg if {
-	some resource in input.resource_changes
+	some resource in input.plan.resource_changes
 	utils.is_in_scope(resource, "aws_sfn_state_machine")
 	not is_logging_configuration_specified(resource)
 	msg := sprintf("Resource '%s' should have logging turned on", [resource.address])
