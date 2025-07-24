@@ -39,3 +39,9 @@ policy "stepfunction-enable-logging" {
   description = "Step Functions state machines should have logging turned on"
   enforcement_level = "advisory"
 }
+
+policy "kinesis-enable-server-side-encryption" {
+  query = "data.policies.kinesis.enable_server_side_encryption.deny"
+  description = "Kinesis streams should be encrypted at rest"
+  enforcement_level = "advisory"
+}

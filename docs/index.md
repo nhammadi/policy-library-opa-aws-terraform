@@ -11,6 +11,9 @@
 ### Elastic File System
 - [enable-at-rest-encryption](./policies/efs-enable-at-rest-encryption.md) Elastic File Systems should be configured to encrypt data at-rest using AWS KMS
 
+### Kinesis Data Streams
+- [enable-server-side-encryption](./policies/kinesis-enable-server-side-encryption.md) Kinesis streams should be encrypted at rest
+
 ### Amazon Kinesis Data Firehose
 - [enable-server-side-encryption](./policies/firehose-enable-server-side-encryption.md) Firehose delivery streams should be encrypted at rest using AWS KMS
 

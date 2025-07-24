@@ -33,7 +33,7 @@ EOF
 
 ### Remediation
 
-To fix this violation, enable logging by adding the logging_configuration block and specifying a valid CloudWatch Logs log group ARN:
+To fix this violation, enable logging by adding the `logging_configuration` block and specifying a valid CloudWatch Logs log group ARN:
 ``` hcl
 resource "aws_sfn_state_machine" "foo" {
   name       = "step-function"

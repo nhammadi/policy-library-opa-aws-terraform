@@ -78,6 +78,8 @@ nav:
     - enable-at-rest-encryption: policies/efs-enable-at-rest-encryption.md
   - Firehose:
     - enable-at-rest-encryption: policies/firehose-enable-server-side-encryption.md
+  - Kinesis:
+    - enable-server-side-encryption: policies/kinesis-enable-server-side-encryption.md
   - SQS:
     - enable-at-rest-encryption: policies/sqs-enable-at-rest-encryption.md
   - Step Functions:

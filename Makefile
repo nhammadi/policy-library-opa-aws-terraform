@@ -5,12 +5,14 @@ fmt:
 
 .PHONY: fmt
 
+.PHONY: generate
+
 generate:
-ifeq ($(strip $(name)),)
-	@echo "Error: flag needs an argument: name"
-	@echo "Usage: make generate name=your-policy-name"
+ifeq ($(word 2, $(MAKECMDGOALS)),)
+	@echo "Error: Policy name required."
+	@echo "Usage: make generate <policy-name>"
 else
-	# Extract parts
+	$(eval name := $(word 2, $(MAKECMDGOALS)))
 	$(eval service := $(word 1,$(subst -, ,$(name))))
 	$(eval file_base := $(patsubst $(service)-%,%,$(name)))
 	$(eval policy_subfolder := $(subst -,_,$(file_base)))
@@ -48,13 +50,15 @@ else
 	@echo "}" >> policies.hcl
 
 	# Append entry to README.md
+	@echo "" >> README.md
 	@echo "- TODO: Add policy summary for $(name) ([docs](./docs/policies/$(name).md) | [OPA](./policies/$(service)/$(policy_subfolder)/$(file_base).rego))" >> README.md
-
 
 	@echo "Done."
 endif
 
-.PHONY: generate
+# This prevents make from trying to execute the policy name as a target
+%:
+	@:
 
 
 lint:

@@ -18,3 +18,5 @@ Comprehensive OPA policies that can be used to establish secure Terraform config
 - Amazon SQS queues should be encrypted at rest ([docs](./docs/policies/sqs-enable-at-rest-encryption.md) | [OPA](./policies/sqs/enable_at_rest_encryption/enable-at-rest-encryption.rego))
 
 - Step Functions state machines should have logging turned on ([docs](./docs/policies/stepfunction-enable-logging.md) | [OPA](./policies/stepfunction/enable_logging/enable-logging.rego))
+
+- Kinesis streams should be encrypted at rest ([docs](./docs/policies/kinesis-enable-server-side-encryption.md) | [OPA](./policies/kinesis/enable_server_side_encryption/enable-server-side-encryption.rego))
