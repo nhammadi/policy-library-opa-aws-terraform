@@ -30,7 +30,6 @@
 ### Amazon ElastiCache
 - [enable-auto-minor-version-upgrade](./policies/elasticache-enable-auto-minor-version-upgrade.md) ElastiCache clusters should have automatic minor version upgrades enabled
 
-
 ### AWS Glue
 - [spark-job-supported-version](./policies/glue-spark-job-supported-version.md) AWS Glue Spark jobs should run on supported versions of AWS Glue
 
@@ -42,6 +41,9 @@
 
 ### Amazon MQ
 - [enable-auto-minor-version-upgrade](./policies/mq-enable-auto-minor-version-upgrade.md) Amazon MQ brokers should have automatic minor version upgrade enabled
+
+### Amazon Redshift
+- [disable-public-access](./policies/redshift-disable-public-access.md) Amazon Redshift clusters should prohibit public access
 
 ### Amazon Kinesis Data Firehose
 - [enable-server-side-encryption](./policies/firehose-enable-server-side-encryption.md) Firehose delivery streams should be encrypted at rest using AWS KMS

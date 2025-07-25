@@ -123,3 +123,9 @@ policy "dms-disable-public-access" {
   description = "Database Migration Service replication instances should not be public"
   enforcement_level = "advisory"
 }
+
+policy "redshift-disable-public-access" {
+  query = "data.policies.redshift.disable_public_access.deny"
+  description = "Amazon Redshift clusters should prohibit public access"
+  enforcement_level = "advisory"
+}

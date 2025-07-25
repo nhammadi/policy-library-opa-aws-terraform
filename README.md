@@ -46,3 +46,5 @@ Comprehensive OPA policies that can be used to establish secure Terraform config
 - DMS endpoints should use SSL ([docs](./docs/policies/dms-use-ssl.md) | [OPA](./policies/dms/use_ssl/use-ssl.rego))
 
 - Database Migration Service replication instances should not be public ([docs](./docs/policies/dms-disable-public-access.md) | [OPA](./policies/dms/disable_public_access/disable-public-access.rego))
+
+- Amazon Redshift clusters should prohibit public access ([docs](./docs/policies/redshift-disable-public-access.md) | [OPA](./policies/redshift/disable_public_access/disable-public-access.rego))

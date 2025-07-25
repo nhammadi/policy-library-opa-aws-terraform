@@ -100,6 +100,8 @@ nav:
     - enable-key-rotation: policies/kms-enable-key-rotation.md
   - MQ:
     - enable-auto-minor-version-upgrade: policies/mq-enable-auto-minor-version-upgrade.md
+  - Redshift:
+    - disable-public-access: policies/redshift-disable-public-access.md
   - RDS:
     - enable-auto-minor-version-upgrade: policies/rds-enable-auto-minor-version-upgrade.md
   - SQS:
