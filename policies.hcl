@@ -135,3 +135,9 @@ policy "redshift-enable-version-upgrade" {
   description = "Amazon Redshift should have automatic upgrades to major versions enabled"
   enforcement_level = "advisory"
 }
+
+policy "neptune-enable-copy-tags-to-snapshots" {
+  query = "data.policies.neptune.enable_copy_tags_to_snapshots.deny"
+  description = "Neptune DB clusters should be configured to copy tags to snapshots"
+  enforcement_level = "advisory"
+}

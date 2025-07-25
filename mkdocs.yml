@@ -100,6 +100,8 @@ nav:
     - enable-key-rotation: policies/kms-enable-key-rotation.md
   - MQ:
     - enable-auto-minor-version-upgrade: policies/mq-enable-auto-minor-version-upgrade.md
+  - Neptune:
+    - enable-copy-tags-to-snapshots: policies/neptune-enable-copy-tags-to-snapshots.md
   - Redshift:
     - disable-public-access: policies/redshift-disable-public-access.md
     - enable-version-upgrade: policies/redshift-enable-version-upgrade.md

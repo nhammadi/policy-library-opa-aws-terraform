@@ -42,6 +42,9 @@
 ### Amazon MQ
 - [enable-auto-minor-version-upgrade](./policies/mq-enable-auto-minor-version-upgrade.md) Amazon MQ brokers should have automatic minor version upgrade enabled
 
+### Amazon Neptune
+- [enable-copy-tags-to-snapshots](./policies/neptune-enable-copy-tags-to-snapshots.md) Neptune DB clusters should be configured to copy tags to snapshots
+
 ### Amazon Redshift
 - [disable-public-access](./policies/redshift-disable-public-access.md) Amazon Redshift clusters should prohibit public access
 - [enable-version-upgrade](./policies/redshift-enable-version-upgrade.md) Amazon Redshift should have automatic upgrades to major versions enabled
