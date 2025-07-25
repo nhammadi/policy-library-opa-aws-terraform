@@ -105,3 +105,9 @@ policy "rds-enable-auto-minor-version-upgrade" {
   description = "RDS automatic minor version upgrades should be enabled"
   enforcement_level = "advisory"
 }
+
+policy "elasticache-enable-auto-minor-version-upgrade" {
+  query = "data.policies.elasticache.enable_auto_minor_version_upgrade.deny"
+  description = "ElastiCache clusters should have automatic minor version upgrades enabled"
+  enforcement_level = "advisory"
+}

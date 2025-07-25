@@ -25,6 +25,10 @@
 - [enable-container-insights](./policies/ecs-enable-container-insights.md) ECS clusters should use Container Insights
 - [disable-taskset-assign-public-ip](./policies/ecs-disable-taskset-assign-public-ip.md) ECS task sets should not automatically assign public IP addresses
 
+### Amazon ElastiCache
+- [enable-auto-minor-version-upgrade](./policies/elasticache-enable-auto-minor-version-upgrade.md) ElastiCache clusters should have automatic minor version upgrades enabled
+
+
 ### AWS Glue
 - [spark-job-supported-version](./policies/glue-spark-job-supported-version.md) AWS Glue Spark jobs should run on supported versions of AWS Glue
 

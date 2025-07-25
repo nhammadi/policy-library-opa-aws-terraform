@@ -86,6 +86,8 @@ nav:
   - ECS:
     - enable-container-insights: policies/ecs-enable-container-insights.md
     - disable-taskset-assign-public-ip: policies/ecs-disable-taskset-assign-public-ip.md
+  - ElastiCache:
+    - enable-auto-minor-version-upgrade: policies/elasticache-enable-auto-minor-version-upgrade.md
   - Firehose:
     - enable-at-rest-encryption: policies/firehose-enable-server-side-encryption.md
   - Glue:
