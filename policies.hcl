@@ -117,3 +117,9 @@ policy "dms-use-ssl" {
   description = "DMS endpoints should use SSL"
   enforcement_level = "advisory"
 }
+
+policy "dms-disable-public-access" {
+  query = "data.policies.dms.disable_public_access.deny"
+  description = "Database Migration Service replication instances should not be public"
+  enforcement_level = "advisory"
+}

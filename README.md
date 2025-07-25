@@ -44,3 +44,5 @@ Comprehensive OPA policies that can be used to establish secure Terraform config
 - ElastiCache clusters should have automatic minor version upgrades enabled ([docs](./docs/policies/elasticache-enable-auto-minor-version-upgrade.md) | [OPA](./policies/elasticache/enable_auto_minor_version_upgrade/enable-auto-minor-version-upgrade.rego))
 
 - DMS endpoints should use SSL ([docs](./docs/policies/dms-use-ssl.md) | [OPA](./policies/dms/use_ssl/use-ssl.rego))
+
+- Database Migration Service replication instances should not be public ([docs](./docs/policies/dms-disable-public-access.md) | [OPA](./policies/dms/disable_public_access/disable-public-access.rego))

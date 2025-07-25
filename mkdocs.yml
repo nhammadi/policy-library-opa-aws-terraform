@@ -79,6 +79,7 @@ nav:
   - DMS:
     - enable-auto-minor-version-upgrade: policies/dms-enable-auto-minor-version-upgrade.md
     - use-ssl: policies/dms-use-ssl.md
+    - disable-public-access: policies/dms-disable-public-access.md
   - EFS:
     - enable-at-rest-encryption: policies/efs-enable-at-rest-encryption.md
   - ECR:
