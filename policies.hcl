@@ -147,3 +147,9 @@ policy "appsync-enable-at-rest-encryption" {
   description = "AWS AppSync API caches should be encrypted at rest"
   enforcement_level = "advisory"
 }
+
+policy "appsync-enable-in-transit-encryption" {
+  query = "data.policies.appsync.enable_in_transit_encryption.deny"
+  description = "AWS AppSync API caches should be encrypted in transit"
+  enforcement_level = "advisory"
+}

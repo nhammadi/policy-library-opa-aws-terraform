@@ -73,6 +73,7 @@ nav:
     - enable-access-logs: policies/apigatewayv2-enable-access-logs.md
   - AppSync:
     - enable-at-rest-encryption: policies/appsync-enable-at-rest-encryption.md
+    - enable-in-transit-encryption: policies/appsync-enable-in-transit-encryption.md
   - Athena:
     - enable-logging: policies/athena-enable-logging.md
   - DynamoDB:

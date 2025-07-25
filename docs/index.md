@@ -2,6 +2,7 @@
 
 ### AWS AppSync
 - [enable-at-rest-encryption](./policies/appsync-enable-at-rest-encryption.md) AWS AppSync API caches should be encrypted at rest
+- [enable-in-transit-encryption](./policies/appsync-enable-in-transit-encryption.md) AWS AppSync API caches should be encrypted in transit
 
 ### Amazon API Gateway V2
 - [enable-access-logs](./policies/apigatewayv2-enable-access-logs.md) Access logging should be configured for API Gateway V2 Stages
