@@ -52,3 +52,5 @@ Comprehensive OPA policies that can be used to establish secure Terraform config
 - Amazon Redshift should have automatic upgrades to major versions enabled ([docs](./docs/policies/redshift-enable-version-upgrade.md) | [OPA](./policies/redshift/enable_version_upgrade/enable-version-upgrade.rego))
 
 - Neptune DB clusters should be configured to copy tags to snapshots ([docs](./docs/policies/neptune-enable-copy-tags-to-snapshots.md) | [OPA](./policies/neptune/enable_copy_tags_to_snapshots/enable-copy-tags-to-snapshots.rego))
+
+- AWS AppSync API caches should be encrypted at rest ([docs](./docs/policies/appsync-enable-at-rest-encryption.md) | [OPA](./policies/appsync/enable_at_rest_encryption/enable-at-rest-encryption.rego))

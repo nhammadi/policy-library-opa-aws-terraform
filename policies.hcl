@@ -141,3 +141,9 @@ policy "neptune-enable-copy-tags-to-snapshots" {
   description = "Neptune DB clusters should be configured to copy tags to snapshots"
   enforcement_level = "advisory"
 }
+
+policy "appsync-enable-at-rest-encryption" {
+  query = "data.policies.appsync.enable_at_rest_encryption.deny"
+  description = "AWS AppSync API caches should be encrypted at rest"
+  enforcement_level = "advisory"
+}

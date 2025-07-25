@@ -1,5 +1,8 @@
 # Policies Per AWS Service
 
+### AWS AppSync
+- [enable-at-rest-encryption](./policies/appsync-enable-at-rest-encryption.md) AWS AppSync API caches should be encrypted at rest
+
 ### Amazon API Gateway V2
 - [enable-access-logs](./policies/apigatewayv2-enable-access-logs.md) Access logging should be configured for API Gateway V2 Stages
 
