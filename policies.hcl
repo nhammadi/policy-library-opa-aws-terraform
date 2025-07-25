@@ -159,3 +159,9 @@ policy "eventbridge-attach-resource-based-policy" {
   description = "EventBridge custom event buses should have a resource-based policy attached"
   enforcement_level = "advisory"
 }
+
+policy "opensearch-enable-node-to-node-encryption" {
+  query = "data.policies.opensearch.enable_node_to_node_encryption.deny"
+  description = "OpenSearch domains should encrypt data sent between nodes"
+  enforcement_level = "advisory"
+}

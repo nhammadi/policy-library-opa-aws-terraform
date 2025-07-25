@@ -52,6 +52,9 @@
 ### Amazon Neptune
 - [enable-copy-tags-to-snapshots](./policies/neptune-enable-copy-tags-to-snapshots.md) Neptune DB clusters should be configured to copy tags to snapshots
 
+### Amazon OpenSearch
+- [enable-node-to-node-encryption](./policies/opensearch-enable-node-to-node-encryption.md) OpenSearch domains should encrypt data sent between nodes
+
 ### Amazon Redshift
 - [disable-public-access](./policies/redshift-disable-public-access.md) Amazon Redshift clusters should prohibit public access
 - [enable-version-upgrade](./policies/redshift-enable-version-upgrade.md) Amazon Redshift should have automatic upgrades to major versions enabled

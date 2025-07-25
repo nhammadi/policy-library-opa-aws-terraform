@@ -105,6 +105,8 @@ nav:
     - enable-key-rotation: policies/kms-enable-key-rotation.md
   - MQ:
     - enable-auto-minor-version-upgrade: policies/mq-enable-auto-minor-version-upgrade.md
+  - OpenSearch:
+    - enable-node-to-node-encryption: policies/opensearch-enable-node-to-node-encryption.md
   - Neptune:
     - enable-copy-tags-to-snapshots: policies/neptune-enable-copy-tags-to-snapshots.md
   - Redshift:

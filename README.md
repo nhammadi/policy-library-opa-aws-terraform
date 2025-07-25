@@ -58,3 +58,5 @@ Comprehensive OPA policies that can be used to establish secure Terraform config
 - AWS AppSync API caches should be encrypted in transit ([docs](./docs/policies/appsync-enable-in-transit-encryption.md) | [OPA](./policies/appsync/enable_in_transit_encryption/enable-in-transit-encryption.rego))
 
 - EventBridge custom event buses should have a resource-based policy attached ([docs](./docs/policies/eventbridge-attach-resource-based-policy.md) | [OPA](./policies/eventbridge/attach_resource_based_policy/attach-resource-based-policy.rego))
+
+- OpenSearch domains should encrypt data sent between nodes ([docs](./docs/policies/opensearch-enable-node-to-node-encryption.md) | [OPA](./policies/opensearch/enable_node_to_node_encryption/enable-node-to-node-encryption.rego))
