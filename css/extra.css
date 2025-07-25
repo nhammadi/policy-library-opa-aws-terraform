@@ -1,0 +1,18 @@
+.md-typeset h1 {
+    line-height: normal;
+    font-weight: bold;
+    font-size: 1.3em;
+    color: var(--md-default-fg-color);
+}
+
+.md-typeset h3 {
+    line-height: normal;
+    font-weight: bold;
+    font-size: 1em;
+    color: var(--md-default-fg-color);
+}
+
+.md-typeset {
+    font-size: 0.7rem;
+    line-height: 1.5;
+}
