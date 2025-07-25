@@ -93,6 +93,8 @@ nav:
     - disable-taskset-assign-public-ip: policies/ecs-disable-taskset-assign-public-ip.md
   - ElastiCache:
     - enable-auto-minor-version-upgrade: policies/elasticache-enable-auto-minor-version-upgrade.md
+  - EventBridge:
+    - attach-resource-based-policy: policies/eventbridge-attach-resource-based-policy
   - Firehose:
     - enable-at-rest-encryption: policies/firehose-enable-server-side-encryption.md
   - Glue:

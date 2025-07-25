@@ -153,3 +153,9 @@ policy "appsync-enable-in-transit-encryption" {
   description = "AWS AppSync API caches should be encrypted in transit"
   enforcement_level = "advisory"
 }
+
+policy "eventbridge-attach-resource-based-policy" {
+  query = "data.policies.eventbridge.attach_resource_based_policy.deny"
+  description = "EventBridge custom event buses should have a resource-based policy attached"
+  enforcement_level = "advisory"
+}

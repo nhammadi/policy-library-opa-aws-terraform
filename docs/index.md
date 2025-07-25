@@ -23,6 +23,9 @@
 ### Elastic File System
 - [enable-at-rest-encryption](./policies/efs-enable-at-rest-encryption.md) Elastic File Systems should be configured to encrypt data at-rest using AWS KMS
 
+### Amazon EventBridge
+- [attach-resource-based-policy](./policies/eventbridge-attach-resource-based-policy.md) EventBridge custom event buses should have a resource-based policy attached
+
 ### Amazon ECR
 - [enable-private-image-scanning](./policies/ecr-enable-private-image-scanning.md) ECR private repositories should have image scanning configured
 - [configure-private-lifecycle-policy](./policies/ecr-configure-private-lifecycle-policy.md) ECR repositories should have at least one lifecycle policy configured
