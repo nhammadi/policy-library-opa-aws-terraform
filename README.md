@@ -42,3 +42,5 @@ Comprehensive OPA policies that can be used to establish secure Terraform config
 - RDS automatic minor version upgrades should be enabled ([docs](./docs/policies/rds-enable-auto-minor-version-upgrade.md) | [OPA](./policies/rds/enable_auto_minor_version_upgrade/enable-auto-minor-version-upgrade.rego))
 
 - ElastiCache clusters should have automatic minor version upgrades enabled ([docs](./docs/policies/elasticache-enable-auto-minor-version-upgrade.md) | [OPA](./policies/elasticache/enable_auto_minor_version_upgrade/enable-auto-minor-version-upgrade.rego))
+
+- DMS endpoints should use SSL ([docs](./docs/policies/dms-use-ssl.md) | [OPA](./policies/dms/use_ssl/use-ssl.rego))

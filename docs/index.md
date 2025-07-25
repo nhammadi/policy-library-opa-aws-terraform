@@ -8,6 +8,7 @@
 
 ### Database Migration Service
 - [enable-auto-minor-version-upgrade](./policies/dms-enable-auto-minor-version-upgrade.md) DMS replication instances should have automatic minor version upgrade enabled
+- [use-ssl](./policies/dms-use-ssl.md) DMS endpoints should use SSL
 
 ### DynamoDB
 - [enable-dax-at-rest-encryption](./policies/dynamodb-dax-enable-in-transit-encryption.md) Amazon DynamoDB Accelerator (DAX) clusters should be encrypted at rest

@@ -111,3 +111,9 @@ policy "elasticache-enable-auto-minor-version-upgrade" {
   description = "ElastiCache clusters should have automatic minor version upgrades enabled"
   enforcement_level = "advisory"
 }
+
+policy "dms-use-ssl" {
+  query = "data.policies.dms.use_ssl.deny"
+  description = "DMS endpoints should use SSL"
+  enforcement_level = "advisory"
+}
