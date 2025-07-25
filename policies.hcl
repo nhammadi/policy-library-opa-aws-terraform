@@ -129,3 +129,9 @@ policy "redshift-disable-public-access" {
   description = "Amazon Redshift clusters should prohibit public access"
   enforcement_level = "advisory"
 }
+
+policy "redshift-enable-version-upgrade" {
+  query = "data.policies.redshift.enable_version_upgrade.deny"
+  description = "Amazon Redshift should have automatic upgrades to major versions enabled"
+  enforcement_level = "advisory"
+}

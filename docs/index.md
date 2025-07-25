@@ -44,6 +44,7 @@
 
 ### Amazon Redshift
 - [disable-public-access](./policies/redshift-disable-public-access.md) Amazon Redshift clusters should prohibit public access
+- [enable-version-upgrade](./policies/redshift-enable-version-upgrade.md) Amazon Redshift should have automatic upgrades to major versions enabled
 
 ### Amazon Kinesis Data Firehose
 - [enable-server-side-encryption](./policies/firehose-enable-server-side-encryption.md) Firehose delivery streams should be encrypted at rest using AWS KMS

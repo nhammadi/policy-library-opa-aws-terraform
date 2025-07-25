@@ -102,6 +102,7 @@ nav:
     - enable-auto-minor-version-upgrade: policies/mq-enable-auto-minor-version-upgrade.md
   - Redshift:
     - disable-public-access: policies/redshift-disable-public-access.md
+    - enable-version-upgrade: policies/redshift-enable-version-upgrade.md
   - RDS:
     - enable-auto-minor-version-upgrade: policies/rds-enable-auto-minor-version-upgrade.md
   - SQS:

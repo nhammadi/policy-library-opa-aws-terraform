@@ -48,3 +48,5 @@ Comprehensive OPA policies that can be used to establish secure Terraform config
 - Database Migration Service replication instances should not be public ([docs](./docs/policies/dms-disable-public-access.md) | [OPA](./policies/dms/disable_public_access/disable-public-access.rego))
 
 - Amazon Redshift clusters should prohibit public access ([docs](./docs/policies/redshift-disable-public-access.md) | [OPA](./policies/redshift/disable_public_access/disable-public-access.rego))
+
+- Amazon Redshift should have automatic upgrades to major versions enabled ([docs](./docs/policies/redshift-enable-version-upgrade.md) | [OPA](./policies/redshift/enable_version_upgrade/enable-version-upgrade.rego))
